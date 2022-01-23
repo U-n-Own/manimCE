@@ -113,6 +113,10 @@ Server](https://www.manim.community/discord/) or [Reddit Community](https://www.
 
 ## Contributing
 
+For contribute go to: https://github.com/manimCommunity/manim
+        
+--
+       
 Contributions to Manim are always welcome. In particular, there is a dire need for tests and documentation. For contribution guidelines, please see the [documentation](https://docs.manim.community/en/stable/contributing.html).
 
 Most developers on the project use `poetry` for management. You'll want to have poetry installed and available in your environment.
