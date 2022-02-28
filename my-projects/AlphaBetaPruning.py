@@ -8,7 +8,7 @@ class Introduction(Scene):
 
         #Title
         text_intro = Title('This is an animation for better understanding' r''' $\alpha-\beta$  ''' '   Pruning', include_underline = True, scale_factor=0.8, tex_environment = "center")
-        
+
         self.play(Write(text_intro), run_time = 3)
 
         self.wait()
@@ -26,9 +26,9 @@ class Introduction(Scene):
 
         self.wait(1)
 
-        #Pseudocode           
-        text_pseudocode = MathTex(r''' 
-MINIMAX(s) =  
+        #Pseudocode
+        text_pseudocode = MathTex(r'''
+MINIMAX(s) =
 \begin{cases}
     \text{UTILITY(s,MAX),} & \quad\text{if IS-TERMINAL(s)}\\
     \text{$max_a$} \in \text{ Actions(s) MINIMAX(RESULT(s, a)),} &  \quad\text{if TO-MOVE(s) = MAX}\\
@@ -40,9 +40,9 @@ MINIMAX(s) =
 
 class Pseudocode(Scene):
        def construct(self):
-#Pseudocode           
-        text_pseudocode = MathTex(r''' 
-MINIMAX(s) =  
+#Pseudocode
+        text_pseudocode = MathTex(r'''
+MINIMAX(s) =
 \begin{cases}
     \text{UTILITY(s,MAX),} & \quad\text{if IS-TERMINAL(s)}\\
     \text{$max_a$} \in \text{ Actions(s) MINIMAX(RESULT(s, a)),} &  \quad\text{if TO-MOVE(s) = MAX}\\
@@ -57,15 +57,15 @@ MINIMAX(s) =
 
 class BinaryCompleteTree(Scene):
     def construct(self):
-        
+
         nodes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9 , 10, 11, 12, 13, 14]
         edges = [(0, 1), (0, 2), (1, 3), (1, 4), (2, 5), (2, 6), (3, 7), (3, 8), (4, 9), (4, 10), (5, 11), (5, 12), (6, 13), (6, 14)]
-        
+
         root = nodes[0]
 
-        g = Graph(nodes, edges, layout = "tree", layout_scale = 7, root_vertex = root, labels = True, label_fill_color = DARK_BLUE, vertex_config = )
+        g = Graph(nodes, edges, layout = "tree", layout_scale = 7, root_vertex = root, labels = True, label_fill_color = DARK_BLUE)
         #self.play(ShowCreation(g))
-        
+
         #This replace the labels with the filling color
         #g.set_color_by_gradient(RED, BLUE)
 
